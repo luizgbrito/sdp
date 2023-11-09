@@ -31,6 +31,48 @@
   
 </head>
 <body>
+
+   <style>
+    body {
+      text-align: center;
+    }
+
+    @keyframes pulse {
+      0% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.1);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+
+    .green-button {
+      display: inline-block;
+      padding: 15px 30px;
+      background-color: #008001; /* Verde mais brilhante */
+      color: white;
+      text-align: center;
+      text-decoration: none;
+      font-size: 18px;
+      border-radius: 8px; /* Bordas levemente arredondadas */
+      cursor: pointer;
+      border: none; /* Remover contorno */
+      font-weight: bold; /* Texto em negrito */
+      text-transform: uppercase; /* Texto em caixa alta */
+      animation: pulse 1.5s infinite; /* Adiciona a animação pulsante */
+    }
+
+    @media (max-width: 600px) {
+      /* Estilos adicionais para tornar o botão responsivo em dispositivos móveis */
+      .green-button {
+        width: 100%;
+        box-sizing: border-box;
+      }
+    }
+  </style>
   
   <div class="section-2 wf-section">
     <div class="container-5 w-container">
@@ -344,8 +386,9 @@
       <div class="div-block"><img src="images/audio.svg" loading="lazy" alt="" class="image">
         <h1 class="legend"> CERTIFIQUE-SE DE QUE O SEU ÁUDIO ESTÁ LIGADO!</h1>
       </div>
-      <div class="esconde button animated-button1 full-width _2 w-inline-block pepperBtn">
-        <div class="text-block-67">SIM, QUERO ACESSO AO ORGASMOS EXPLOSIVOS</div>
+      <br>
+      <br>
+<button class="esconde green-button pepperBtn">Quero Acesso ao Orgasmos Explosivos</button>
         <div class="w-embed"><span></span>
           <span></span>
           <span></span>
